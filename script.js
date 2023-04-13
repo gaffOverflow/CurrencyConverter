@@ -32,19 +32,28 @@ convert.addEventListener("click", function () {
   value = input.value;
 
   if (currency1 != currency2) {
-  convert(currency1, currency2, value);  function convert(currency1, currency2, value) {
-    const host = "api.frankfurter.app";
-    fetch(
-      `https://${host}/latest?amount=${value}&from=${currency1}&to=${currency2}`
-    )
-      .then((val) => val.json())
-      .then((val) => {
-        // console.log(Object.values(val.rates)[0]);
-        result.value = Object.values(val.rates)[0];
-      });
-  }
+    convert(currency1, currency2, value);
+    function convert(currency1, currency2, value) {
+      const host = "api.frankfurter.app";
+      fetch(
+        `https://${host}/latest?amount=${value}&from=${currency1}&to=${currency2}`
+      )
+        .then((val) => val.json())
+        .then((val) => {
+          // console.log(Object.values(val.rates)[0]);
+          result.value = Object.values(val.rates)[0];
+        });
+    }
   } else {
     alert("u no well");
   }
 });
 
+select.addEventListener("change", function () {
+  input.value = "";
+  result.value = "";
+});
+pick.addEventListener("change", function () {
+  input.value = "";
+  result.value = "";
+});
