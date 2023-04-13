@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome Currency Converter</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <style>
-    option{
-      font-size: 10px;
-    }
-  </style>
-</head>
-<body>
-<div class="container bg-blue-400 h-[100dvh] w-[100dvw] font-bold grid place-content-center">
-  <main class="bg-[#ffffff57] py-9 px-10 rounded-md ">
-    <div class="grid grid-cols-2 gap-4">
-    <aside>
-<select value="" class="sel">
-      <!-- <option name="" id="">NGR</option>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+      option {
+        font-size: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div
+      class="bg-blue-400 h-[100dvh] w-[100dvw] font-bold grid place-content-center"
+    >
+      <main class="bg-[#ffffff57] py-9 px-10 rounded-md">
+        <div class="grid grid-cols-2 gap-4">
+          <aside>
+            <select value="" class="sel">
+              <!-- <option name="" id="">NGR</option>
       <option name="" id="">NGR</option>
       <option name="" id="">NGR</option> -->
-
-    </select>
-    <br>
-    <input type="text" name="" id="" value="50" class="input">
-    </aside>
-    <aside>
-<select value="" class="sel">
-      <!-- <option name="" id="">NGR</option>
+            </select>
+            <br />
+            <input type="text" name="" id="" value="" class="input" />
+          </aside>
+          <aside>
+            <select value="" class="sel pick">
+              <!-- <option name="" id="">NGR</option>
       <option name="" id="">NGR</option>
       <option name="" id="">NGR</option> -->
-
-    </select>
-    <br>
-    <input type="text" name="" id="" value="50" class="result">
-    </aside>
+            </select>
+            <br />
+            <input type="text" name="" id="" value="" class="result" disabled/>
+          </aside>
+        </div>
+        <button
+          class="w-full bg-blue-400 py-4 mt-4 rounded-md active:bg-blue-400 hover:bg-blue-500 duration-100"
+        >
+          Convert
+        </button>
+      </main>
     </div>
-<button class="w-full bg-blue-400 py-4 mt-4 rounded-md active:bg-blue-400 hover:bg-blue-500 duration-100">Convert</button>
-  </main>
-</div>
-</body>
+  </body>
 </html>
